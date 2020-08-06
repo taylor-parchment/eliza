@@ -1,0 +1,3 @@
+This is a very simplistic implementation of Eliza, a chatbot that imitates a Rogerian therapist (https://en.wikipedia.org/wiki/ELIZA). This uses only regexes to look for keywords in the input and uses no transformations, making it extremely limited. There are only a few topics it can respond to with unique answers, otherwise it will choose from a small set of general responses. 
+
+I may update this with transformations using regexes in order to generate unique responses based directly on the input. However, it is somewhat difficult and clunky to achieve with only regexes, so I may hold off and make a new version in the future using NLTK, where this would be much easier to accomplish using tools like part-of-speech tagging.
