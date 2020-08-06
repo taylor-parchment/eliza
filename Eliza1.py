@@ -11,8 +11,8 @@ family = re.compile(r'''(\W|^)
 (dad|father|mom|mother|brother|sister|girlfriend|boyfriend|wife|husband|spouse|son|daughter|cousin)
 (\W|$)''', re.IGNORECASE | re.VERBOSE)
 
-first_person = re.compile(r'i|me|my|mine', re.IGNORECASE)
-second_person = re.compile(r'you|your|yours', re.IGNORECASE)
+first_person = re.compile(r'(\W|^)(i|i\'m|me|my|mine)(\W|$)', re.IGNORECASE)
+second_person = re.compile(r'(\W|^)(you|you\'re|your|yours)(\W|$)', re.IGNORECASE)
 
 regexes = [greeting, feeling, desire, emotion, family] # list of all regex categories
 
